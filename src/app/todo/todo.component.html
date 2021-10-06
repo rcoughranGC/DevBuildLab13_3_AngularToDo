@@ -1,0 +1,32 @@
+<head> </head>
+
+<h2>A place to store your todos</h2>
+<div class="maindiv">
+    <ng-container *ngFor="let mytodo of toDos">
+        
+        <div>
+            <span *ngIf="!mytodo.completed">
+                <button class="buttonC" (click)="completeTask(mytodo)">Complete</button> 
+            </span>
+
+            <div 
+            style="text-decoration: line-through" 
+            *ngIf="mytodo.completed; else notCompleted">
+                
+                {{mytodo.task}}
+                
+            </div>
+            <ng-template #notCompleted>
+
+                {{mytodo.task}}
+
+            </ng-template>
+        </div>
+
+    </ng-container> 
+    <div>
+        <input type="text" class="addTask" [(ngModel)]="newTask"/>
+        <br/>
+        <button class="buttonA" (click)="addTask()">Add</button>
+    </div>
+</div>

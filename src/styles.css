@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-image: linear-gradient(to right, #f857a6, #ff5858);
+  }
+
+.maindiv {
+    width: 300px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 3px;
+    Box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  }
+  .buttonC{
+      border-radius: 6px;
+      border: 1px solid #ff1493;
+      background: white;
+      border-color: #ff1493;
+      color: #ff1493;
+      font-weight: 300;
+
+  }
+  .addTask{
+      width: 280px;
+
+  }
+  .buttonA{
+      width: 290px;
+      border-radius: 2px;
+      color: white;
+      border-color: #ff1493;
+      background-color: #ff1493;
+  }
